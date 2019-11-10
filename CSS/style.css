@@ -1,0 +1,305 @@
+*{
+    box-sizing: border-box; 
+}
+html{
+    font-size: 10px; /* tamanho da fonte */ 
+}
+body{
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+/*LAYOUT*/
+
+.container{
+    max-width: 1080px;
+    margin: 0 auto;
+    margin-top: 7rem;
+    
+}
+
+/*fontes*/
+h3{
+    font-size: 2.5rem;
+}
+
+p{
+    font-size: 1.6rem;
+}
+
+a{
+    text-decoration: none;
+}
+
+/*botão*/
+.btn{
+    border-radius: 3rem;
+    text-transform: uppercase;
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.btn-branco{
+    color: #7e459b;
+    background-color: white
+}
+
+.btn-roxo{
+    color: #7e459b;
+    border: 1px solid #7e459b;
+}
+
+/*utilidades*/
+
+/*header banner*/
+
+.banner{
+    background: url(../img/banner-bg.png) center no-repeat;
+    background-size: cover;
+    height: 90vh;
+    text-align: center;
+    padding-top: 20rem;
+    color: white;
+}
+
+
+.banner__titulo{
+    font-size: 7rem;
+    font-weight: 700;
+}
+
+.banner__subtitulo{
+    font-size: 3rem;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+
+
+/*SEÇÃO SOBRE*/
+
+.sobre__titulo{
+    font-size: 4rem;
+    color: #7E459B;
+    text-align: center;
+    font-weight: 700;
+}
+
+.sobre-descricao, .sobre-habilidades{
+    width: 40%;
+    display: inline-block;
+    line-height: 1.5;
+}
+.sobre-descricao__destaque{
+    font-size: 2rem;
+    margin-top: 3.5rem;
+    margin-bottom: 2rem;
+}
+
+ .sobre-habilidades__titulo{
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+
+.sobre-habilidades{
+    margin-left: 10rem;
+}
+
+   
+.sobre-habilidades__lista {
+            padding-left: 1rem;
+            line-height: 1.8;
+            font-size: 1.8rem;
+        }
+
+
+.sobre-habilidades__lista{
+    padding-left: 2rem;
+    line-height: 2;
+    font-size: 1.6rem;
+
+}
+
+/*redes sociais*/
+
+.footer{
+    text-align: center;
+}
+
+.redes-sociais__link{
+    display: inline-block;
+    width: 20%;
+    background-color: #7e459b;
+    padding: 2rem 0;
+    margin: 0 1rem;
+    text-align: center;
+    color: white;
+
+}
+
+
+.redes-sociais__img, .redes-sociais__titulo{
+    margin-bottom: 4rem;
+}
+
+
+.footer-copyright__texto{
+     color: #7E459B;
+     font-weight: lighter;
+     margin-top: 3rem;
+     padding: 1rem;
+ }
+
+ /* Media max-width 1024px */
+
+ @media (max-width: 1024px) {
+    .sobre-descricao {
+        margin-left: 8rem;
+    }
+
+    .sobre-descricao__destaque {
+        padding-bottom: 1rem;
+    }
+
+ }
+
+
+
+/* Media max-width 768px */
+
+ @media (max-width: 768px) {
+    .container {
+        max-width: 768px;
+        margin-top: 3rem;
+    }
+
+    
+    .h3 {
+        font-size: 0.5rem;
+    }
+
+    .btn-branco {
+        padding: 0.9rem 1.7rem;
+        font-size: 1.3rem;
+     }
+
+     .banner {
+        height: 75vh;
+        padding-top: 15rem;
+     }
+
+     .banner__titulo {
+        font-size: 4rem;
+         }
+
+     .sobre__titulo {
+         font-size: 3.5rem;
+     }
+
+     .sobre-habilidades__titulo {
+        font-size: 1.6rem;
+    }
+    .sobre-descricao__destaque {
+        font-size: 1.7rem;
+    }
+    .sobre-descricao {
+        margin-left: 6rem;
+    }
+
+    .sobre-habilidades {
+        margin-left: 5rem;
+    }
+
+    .sobre-habilidades__lista {
+        padding-left: 1rem;
+        line-height: 1.8;
+        font-size: 1.6rem;
+    }
+
+    .redes-sociais__link {
+        width: 20%; 
+        margin: 0 0.5rem;
+    }
+
+    .redes-sociais__img, .redes-sociais__titulo{
+        margin-bottom: -1rem;
+        margin: 2px 0.3rem;
+    }
+
+    .redes-sociais__titulo{
+        font-size: 2rem;
+        padding: 1rem;
+    }
+
+    .footer-copyright__texto{
+        font-size: 1.3rem;
+    }
+
+}
+
+/* Media max-width 420px */
+
+@media (max-width: 420px) {
+    .container {
+        max-width: 420px;
+        margin-top: 3rem;
+    }
+
+    .banner {
+        height: 70vh;
+        padding-top: 11rem;
+     }
+
+    .banner__titulo {
+        font-size: 4rem;
+         }
+
+    .banner__subtitulo {
+        font-size: 2rem;
+    }     
+
+    .sobre__titulo {
+        font-size: 2.5rem;
+        margin-top: 5rem;
+     }
+
+     .sobre-descricao {
+        margin-left: 6rem;
+        width: 70%;
+        text-align: center;
+    }
+
+    .sobre-descricao__destaque {
+        padding-bottom: 1rem;
+        margin-top: 2rem;
+    }
+
+    .sobre-habilidades {
+        margin-left: 11rem;
+        text-align: center;
+        margin-top: 3rem;
+    }
+
+    .sobre-habilidades__lista {
+        padding-left: 1rem;
+        line-height: 1.8;
+        font-size: 1.6rem;
+    }
+
+    .redes-sociais__link {
+        width: 40%; 
+        margin: 6px 0.5rem;
+    }
+
+    .redes-sociais__img, .redes-sociais__titulo{
+        margin-bottom: -1rem;
+        margin: 2px 0.3rem;
+    }
+
+    .footer-copyright__texto{
+        font-size: 1.3rem;
+    }
+
+}
+
